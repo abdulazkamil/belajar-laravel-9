@@ -50,3 +50,7 @@ Auth::routes();
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+//storage
+Route::get('/picture/create', [PictureController::class, 'create'])->name('picture.create');
