@@ -6,16 +6,17 @@
     <title>Create picture</title>
 </head>
 <body>
-<form action="" method="post">
+<form action="{{route ('picture.store')}}" method="post" enctype="multipart/form-data">
  @csrf
 
 <input type="text" name="name" placeholder="Nama">
   <br>
 <input type="file" name="file" >
 <br>
+<button type="submit">Submit</button>
 </form>
 
-<button type="submit">Submit</button>
+
    
 
 </body>
