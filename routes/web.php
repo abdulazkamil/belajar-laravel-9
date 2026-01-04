@@ -57,3 +57,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/picture/create', [PictureController::class, 'create'])->name('picture.create');
 Route::post('/picture/create', [PictureController::class, 'store'])->name('picture.store');
 Route::get('/picture/{picture}', [PictureController::class, 'show'])->name('picture.show');
+Route::delete('/picture/{picture}', [PictureController::class, 'delete'])->name('picture.delete');
+Route::get('/copy/{picture}', [PictureController::class, 'copy'])->name('picture.copy');
+Route::get('/move/{picture}', [PictureController::class, 'move'])->name('picture.move');
